@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marine Life eDNA Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <h1>Marine Life Detection using eDNA & AI</h1>
+  <p>Non-invasive marine biodiversity monitoring using machine learning</p>
+  <button onclick="startDemo()">🔍 Start Analysis</button>
+</header>
+
+<!-- INPUT SECTION -->
+<section class="input-section">
+  <h2>🧬 Upload eDNA Sample</h2>
+  <textarea id="dnaInput" placeholder="Paste DNA sequence here..."></textarea>
+  <button onclick="analyzeDNA()">Analyze DNA</button>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard" id="dashboard">
+
+  <!-- SPECIES CARDS -->
+  <div class="card">
+    <h3>🐠 Species Detected</h3>
+    <ul id="speciesList">
+      <li>Tuna – 92%</li>
+      <li>Coral – 88%</li>
+      <li class="unknown">Unknown Organism ⚠</li>
+    </ul>
+  </div>
+
+  <!-- BIODIVERSITY CHART -->
+  <div class="card">
+    <h3>📊 Biodiversity Over Time</h3>
+    <canvas id="biodiversityChart"></canvas>
+  </div>
+
+  <!-- CLUSTER INFO -->
+  <div class="card">
+    <h3>🧠 ML Insight</h3>
+    <p>
+      One DNA cluster does not match known species patterns.
+      This may indicate a rare or undocumented marine organism.
+    </p>
+  </div>
+
+  <!-- CONSERVATION PANEL -->
+  <div class="card alert">
+    <h3>🌍 Conservaption Alert</h3>
+    <p>
+      Repeated unknown DNA detected near coastal industrial zone.
+      Area marked as <b>Warning Zone</b>.
+    </p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

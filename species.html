@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marine eDNA Species Analysis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="analysis-bg">
+
+<header class="hero">
+  <h1>🌊 Marine eDNA Species Analysis</h1>
+  <p>Paste DNA sample below to detect species</p>
+</header>
+
+<section class="input-section">
+  <textarea id="dnaInput" placeholder="Paste DNA sequence here..."></textarea><br>
+  <button onclick="analyzeDNA()">Analyze DNA</button>
+</section>
+
+<section id="speciesResult" style="display:none; text-align:center; margin-top:30px;">
+  <h2 id="speciesName"></h2>
+  <div class="images">
+    <img id="img1" src="" alt="Species Image 1" style="width:200px; margin:10px;">
+    <img id="img2" src="" alt="Species Image 2" style="width:200px; margin:10px;">
+  </div>
+  <p id="speciesInfo" style="max-width:700px; margin:auto;"></p>
+
+  <div class="chart-container" sty
